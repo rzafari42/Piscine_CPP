@@ -18,10 +18,10 @@
 class Karen
 {
     private:
-        void debug( void );
-        void info( void );
-        void warning( void );
-        void error( void );
+        static void debug( void );
+        static void info( void );
+        static void warning( void );
+        static void error( void );
 
     public:
         Karen();
@@ -29,4 +29,11 @@ class Karen
 
         void complain( std::string level );
 };
+
+struct s_func
+{
+    std::string name;
+    void (*func)(void);
+};
+
 #endif

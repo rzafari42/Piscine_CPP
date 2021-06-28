@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME = SedIsForLosers
+NAME = Karen
 CC = clang++
 FLAGS = -Wall -Wextra -Werror
 SRC = main.cpp Karen.cpp

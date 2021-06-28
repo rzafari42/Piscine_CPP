@@ -22,10 +22,26 @@ Karen::~Karen( void )
 
 void Karen::complain( std::string level )
 {
-    void (Karen::*func[])() = { &Karen::debug, &Karen::info, &Karen::warning, &Karen::error};
 
-    (void)level;
-    (void)func;
+    s_func tab[] = { {"debug", &Karen::debug} , 
+                     {"info", &Karen::info} ,
+                     {"warning", &Karen::warning} ,
+                     {"error", &Karen::error} ,
+                    };
+
+    int size = sizeof(tab) / sizeof(*tab);
+    int i = 0;
+
+    while ( i != size )
+    {
+        if (tab[i].name == level)
+        {
+            tab[i].func();
+            break;
+        }
+        i++;
+    }
+    std::cout << "Bad input guy !" << std::endl;
 }
 
 void Karen::debug( void )
