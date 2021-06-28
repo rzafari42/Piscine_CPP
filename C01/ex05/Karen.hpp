@@ -18,10 +18,10 @@
 class Karen
 {
     private:
-        static void debug( void );
-        static void info( void );
-        static void warning( void );
-        static void error( void );
+        void debug( void );
+        void info( void );
+        void warning( void );
+        void error( void );
 
     public:
         Karen();
@@ -33,7 +33,7 @@ class Karen
 struct s_func
 {
     std::string name;
-    void (*func)(void);
+    void (Karen::*func)(void);
 };
 
 #endif

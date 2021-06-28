@@ -36,8 +36,8 @@ void Karen::complain( std::string level )
     {
         if (tab[i].name == level)
         {
-            tab[i].func();
-            break;
+            (this->*tab[i].func)();
+            return;
         }
         i++;
     }
