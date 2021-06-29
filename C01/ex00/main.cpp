@@ -23,11 +23,11 @@ int main( void )
     randomChump("Zombie_rand0");
     std::cout << std::endl;
     std::cout << "Select a number of zombie (1 -> 9) ..." << std::endl;
+    std::cin >> nb;
     while (nb <= 0 || nb > 9)
     {
+        std::cout << "Bad input ... Try again:" << std::endl;
         std::cin >> nb;
-        if (nb <= 0 || nb > 9)
-            std::cout << "Bad input ..." << std::endl;
     }
     std::cout << std::endl;
 
@@ -49,4 +49,3 @@ int main( void )
 
     return 0;
 }
-

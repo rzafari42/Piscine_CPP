@@ -20,4 +20,3 @@ Zombie *zombieHorde( int N, std::string name )
         zb[ i ].setname(randomName(name));
     return zb;
 }
-

@@ -32,7 +32,7 @@ std::string create_filename(char *name)
     std::string filename = "";
 
     for (int i = 0; i < (int)std::strlen(name); i++)
-        filename += std::toupper(name[i]);
+        filename += toupper(name[i]);
     filename += ".replace";
     return filename;
 }

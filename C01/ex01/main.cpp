@@ -27,6 +27,10 @@ int main( void )
     std::cout << std::endl;
 
     Zombie *Horde = zombieHorde(nb, "Member_");
+    std::cout << "First zombie: \n" ;
+    Horde->announce();
+    
+    std::cout << "Others:" << std::endl;
     for (int i = 0; i < nb; i++)
         Horde[i].announce();
     delete [] Horde;

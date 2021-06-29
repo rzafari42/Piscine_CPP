@@ -12,7 +12,7 @@
 
 NAME = HiThisIsBrain
 CC = clang++
-FLAGS = -Wall -Wextra -Werror -g
+FLAGS = -Wall -Wextra -Werror
 SRC = main.cpp
 OBJ = $(SRC:.cpp=.o)
 

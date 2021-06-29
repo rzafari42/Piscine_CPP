@@ -29,7 +29,7 @@ class Zombie
         void setname(std::string name);
 };
 
-Zombie *zombieHorde( int N, std::string name );
+Zombie *zombieHorde( int N, std::string nasme );
 std::string randomName(std::string name);
 
 #endif
