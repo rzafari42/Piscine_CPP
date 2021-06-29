@@ -18,7 +18,8 @@ int check_input(char **argv)
 {
     for (int i = 1; i <= 3; i++)
     {
-        if (argv[i] == NULL)
+        
+        if (argv[i][0] == '\0')
             return 0;
     }
     return 1;
@@ -62,10 +63,15 @@ std::string search_and_replace(std::string line, const char * const  search, con
 void replace(char **argv)
 {
     std::ifstream ifs(argv[1]);
-    std::ofstream ofs(create_filename(argv[1]));
     std::string line;
     std::string res;
 
+    if (!ifs.is_open())
+    {
+        std::cout << "File does not exist" << std::endl;
+        return;
+    }
+    std::ofstream ofs(create_filename(argv[1]));
     while (getline(ifs, line))
     {
         res = search_and_replace(line, argv[2], argv[3]);
@@ -84,7 +90,7 @@ int main( int argc, char **argv )
     }
     if (!check_input(argv))
     {
-        std::cout << "One of the parameter is not a string" << std::endl;
+        std::cout << "One of the parameter is empty" << std::endl;
         return -1;
     }
     else
