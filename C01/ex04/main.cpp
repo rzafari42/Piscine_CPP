@@ -12,7 +12,7 @@
 
 #include <iostream>
 #include <fstream>
-#include <string>
+#include <cstring>
 
 int check_input(char **argv)
 {
