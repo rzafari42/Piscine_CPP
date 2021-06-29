@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/17 10:50:10 by rzafari           #+#    #+#             */
-/*   Updated: 2021/06/27 23:01:42 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/06/29 17:18:23 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,8 @@ int check_input(char **argv)
 {
     for (int i = 1; i <= 3; i++)
     {
-        for (int j = 0; j < (int)std::strlen(argv[i]); j++)
-        {
-            if (std::isdigit(argv[i][j]))
-                return 0;
-        }
+        if (argv[i] == NULL)
+            return 0;
     }
     return 1;
 }
@@ -83,14 +80,14 @@ int main( int argc, char **argv )
     if (argc != 4 || argc > 4)
     {  
         std::cout << "Not enough argument given !" << std::endl;
-        return 0;
+        return -1;
     }
     if (!check_input(argv))
     {
         std::cout << "One of the parameter is not a string" << std::endl;
-        return 0;
+        return -1;
     }
     else
         replace(argv);
-    return 1;
+    return 0;
 }
