@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 15:57:06 by rzafari           #+#    #+#             */
-/*   Updated: 2021/06/29 18:44:18 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/06/29 22:28:31 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -143,10 +143,9 @@ Fixed & Fixed::operator++( void )
     return *this;
 }
 
-Fixed Fixed::operator++( int val )
+Fixed Fixed::operator++( int )
 {
-    (void)val;
-    Fixed temp = *this;
+    Fixed temp(*this);
     this->_fp++;
     return temp;
 }
@@ -157,10 +156,9 @@ Fixed & Fixed::operator--( void )
     return *this;
 }
 
-Fixed Fixed::operator--( int val )
+Fixed Fixed::operator--( int )
 {
-    (void)val;
-    Fixed temp = *this;
+    Fixed temp(*this);
     this->_fp--;
     return temp;
 }
