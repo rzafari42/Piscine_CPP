@@ -6,7 +6,7 @@
 #    By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/06 10:11:03 by rzafari           #+#    #+#              #
-#    Updated: 2021/06/30 14:05:22 by rzafari          ###   ########.fr        #
+#    Updated: 2021/06/30 15:34:16 by rzafari          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,5 +29,5 @@ clean:
 
 fclean: clean
 	rm -rf $(NAME)
-	
+
 re: fclean all
