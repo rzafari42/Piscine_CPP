@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 15:57:06 by rzafari           #+#    #+#             */
-/*   Updated: 2021/06/29 22:28:31 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/06/30 14:03:44 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -193,3 +193,24 @@ const Fixed & Fixed::max( const Fixed &val1, const Fixed &val2 )
 
 const int Fixed::_nb = 8;
 
+
+const Fixed & min( const Fixed &val1, const Fixed &val2 )
+{
+    return (Fixed::min(val1, val2));
+}
+
+const Fixed & max( const Fixed &val1, const Fixed &val2 )
+{
+    return (Fixed::max(val1, val2));
+}
+
+
+Fixed & max( Fixed &val1, Fixed &val2 )
+{
+    return (Fixed::max(val1, val2));
+}
+
+Fixed & min( Fixed &val1, Fixed &val2 )
+{
+    return (Fixed::min(val1, val2));
+}

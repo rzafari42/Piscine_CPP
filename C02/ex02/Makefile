@@ -6,14 +6,14 @@
 #    By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/06 10:11:03 by rzafari           #+#    #+#              #
-#    Updated: 2021/05/18 17:01:54 by rzafari          ###   ########.fr        #
+#    Updated: 2021/06/30 14:04:47 by rzafari          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = FixedClass
 CC = clang++
 FLAGS = -Wall -Wextra -Werror
-SRC = $(wildcard *.cpp)
+SRC = main.cpp Fixed.cpp
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)

@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 15:57:09 by rzafari           #+#    #+#             */
-/*   Updated: 2021/06/29 22:26:27 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/06/30 13:57:03 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,7 @@ class Fixed
         static const Fixed &min( const Fixed &val1, const Fixed &val2 );
         static const Fixed &max( const Fixed &val1, const Fixed &val2 );
 };
+
 
 Fixed &min( Fixed &val1, Fixed &val2 );
 const Fixed &min( const Fixed &val1, const Fixed &val2 );

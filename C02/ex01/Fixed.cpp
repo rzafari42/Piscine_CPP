@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 15:57:06 by rzafari           #+#    #+#             */
-/*   Updated: 2021/06/30 12:41:01 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/06/30 13:41:52 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ int Fixed::toInt( void ) const
     return ( this->_fp >> this->_nb );
 }
 
-Fixed & Fixed::operator=( Fixed const & rhs ) 
+Fixed & Fixed::operator=( Fixed const & rhs )
 {
     std::cout << "Assignation operator called" << std::endl;
     if ( this != &rhs )
