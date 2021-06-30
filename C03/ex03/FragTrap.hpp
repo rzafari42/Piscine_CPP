@@ -1,29 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
+/*   FragTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 11:10:54 by rzafari           #+#    #+#             */
-/*   Updated: 2021/06/30 18:26:34 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/06/30 20:38:19 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SCAVTRAP_HPP
-# define SCAVTRAP_HPP
+#ifndef FRAGTRAP_HPP
+# define FRAGTRAP_HPP
 # include "ClapTrap.hpp"
 
-class ScavTrap : public ClapTrap
+class FragTrap : public virtual ClapTrap
 {
     public:
-        ScavTrap( void  );                              //canonical
-        ScavTrap( std::string name );
-        ScavTrap( ScavTrap const &src );                //canonical
-        ~ScavTrap( void );                              //canonical
-        ScavTrap & operator=( ScavTrap const &rhs );    //canonical
+        FragTrap( void  );                              //canonical
+        FragTrap( std::string name );
+        FragTrap( FragTrap const &src );                //canonical
+        ~FragTrap( void );                              //canonical
+        FragTrap & operator=( FragTrap const &rhs );    //canonical
 
-        void  guardGate();
+        void highFivesGuys(void);
 };
 
 #endif

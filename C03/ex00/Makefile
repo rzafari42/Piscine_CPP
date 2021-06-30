@@ -6,11 +6,11 @@
 #    By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/06 10:11:03 by rzafari           #+#    #+#              #
-#    Updated: 2021/06/30 15:05:36 by rzafari          ###   ########.fr        #
+#    Updated: 2021/06/30 20:39:52 by rzafari          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = FragTrap
+NAME = ClapTrap
 CC = clang++
 FLAGS = -Wall -Wextra -Werror
 SRC = ClapTrap.cpp main.cpp

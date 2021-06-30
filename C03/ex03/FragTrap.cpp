@@ -1,45 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScavTrap.cpp                                       :+:      :+:    :+:   */
+/*   FragTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 11:10:50 by rzafari           #+#    #+#             */
-/*   Updated: 2021/06/30 20:02:17 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/06/30 20:00:23 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ScavTrap.hpp"
+#include "FragTrap.hpp"
 
-ScavTrap::ScavTrap( void ) : ClapTrap( 100, 50, 20, "Default" )
+FragTrap::FragTrap( void ) : ClapTrap(100, 100, 30, "Default")
 {
 }
 
-ScavTrap::ScavTrap( std::string name ) : ClapTrap( 100, 50, 20, name )
+FragTrap::FragTrap( std::string name ) : ClapTrap(100, 100, 30, name)
 {
-    std::cout << "Hey there ! What the f**ck are you doing ?! (ScavTrap Constructor)" << std::endl;
+    std::cout << "Let's get this party started !! (FragTrap Constructor)" << std::endl;
 }
 
-ScavTrap::~ScavTrap( void )
+FragTrap::~FragTrap( void )
 {
-    std::cout << "Hope I'll never see you again ! (ScavTrap Destructor)" << std::endl;
+    std::cout << "Bye my friend ! (FragTrap Destructor)" << std::endl;
 }
 
-ScavTrap & ScavTrap::operator=( ScavTrap const & rhs )
+FragTrap & FragTrap::operator=( FragTrap const & rhs ) 
 {
     if ( this != &rhs )
         ClapTrap::operator=(rhs);
     return *this;
 }
 
-ScavTrap::ScavTrap( ScavTrap const &src )
+FragTrap::FragTrap( FragTrap const &src )
 {
     *this = src;
     return ;
 }
 
-void  ScavTrap::guardGate()
+void FragTrap::highFivesGuys()
 {
-    std::cout << this->getName() << " has enterred in Gate keeper" << std::endl;
+    std::cout << "Hey !! Would you give me an high five ??" << std::endl;
 }

@@ -6,14 +6,14 @@
 #    By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/06 10:11:03 by rzafari           #+#    #+#              #
-#    Updated: 2021/06/30 18:35:01 by rzafari          ###   ########.fr        #
+#    Updated: 2021/06/30 20:39:58 by rzafari          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = ScavTrap
+NAME = DiamondTrap
 CC = clang++
-FLAGS = -Wall -Wextra -Werror
-SRC = ClapTrap.cpp ScavTrap.cpp main.cpp
+FLAGS = -Wall -Wextra -Werror -Wshadow -Wno-shadow
+SRC = ClapTrap.cpp ScavTrap.cpp FragTrap.cpp DiamondTrap.cpp main.cpp
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)
