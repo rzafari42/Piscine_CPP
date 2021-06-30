@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Fixed.class.cpp                                    :+:      :+:    :+:   */
+/*   Fixed.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 15:57:06 by rzafari           #+#    #+#             */
-/*   Updated: 2021/06/29 15:20:22 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/06/30 12:04:21 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Fixed.class.hpp"
+#include "Fixed.hpp"
 
 Fixed::Fixed( void ) : _fp( 0 )
 {
@@ -50,26 +50,3 @@ Fixed & Fixed::operator=( Fixed const & rhs )
 }
 
 const int Fixed::_nb = 8;
-
-int main(void) {
-    Fixed a;
-    Fixed b(a);
-    Fixed c;
-    
-    c = b;
-
-    std::cout << a.getRawBits() << std::endl;
-    std::cout << b.getRawBits() << std::endl;
-    std::cout << c.getRawBits() << std::endl;
-
-    std::cout << "Let's set some raw bits ..." << std::endl;
-    a.setRawBits(8);
-    b.setRawBits(18);
-    c.setRawBits(2);
-    std::cout << "Now we have ..." << std::endl;
-    std::cout << a.getRawBits() << std::endl;
-    std::cout << b.getRawBits() << std::endl;
-    std::cout << c.getRawBits() << std::endl;
-
-    return 0;
-}

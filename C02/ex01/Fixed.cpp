@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 15:57:06 by rzafari           #+#    #+#             */
-/*   Updated: 2021/06/29 18:42:12 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/06/30 12:41:01 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ Fixed::Fixed( const int val ) : _fp( val << this->_nb )
     std::cout << "Int constructor called" << std::endl;
 }
 
-Fixed::Fixed( const float val ) : _fp( roundf( val * (1<< this->_nb))  )
+Fixed::Fixed( const float val ) : _fp( roundf( val * (1 << this->_nb))  )
 {
     std::cout << "Float constructor called" << std::endl;
 }
