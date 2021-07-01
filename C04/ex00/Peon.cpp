@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/31 10:23:13 by rzafari           #+#    #+#             */
-/*   Updated: 2021/05/31 20:08:55 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/01 14:41:04 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ Peon::~Peon( void )
 
 void Peon::getPolymorphed( void ) const 
 {
-    std::cout << this->_name << " was just polymorphed into a pink pony!" << std::endl;
+    std::cout << this->_name << " has been turned into a pink pony!" << std::endl;
 }
 
 Peon & Peon::operator=( Peon const & rhs)

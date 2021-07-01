@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/31 10:23:16 by rzafari           #+#    #+#             */
-/*   Updated: 2021/05/31 20:19:12 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/01 14:40:14 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,10 @@ Sorcerer::Sorcerer( void )
 
 void Sorcerer::birthannoucement( void )
 {
-    std::cout << std::uppercase << this->_name << ", " << std::uppercase << this->_type << ", is born!" << std::endl;
+    std::cout << this->_name << ", " << this->_title << ", is born!" << std::endl;
 }
 
-Sorcerer::Sorcerer( std::string name, std::string type ) : _name(name), _type(type)
+Sorcerer::Sorcerer( std::string name, std::string title ) : _name(name), _title(title)
 {
     birthannoucement();
 }
@@ -42,12 +42,12 @@ Sorcerer & Sorcerer::operator=( Sorcerer const & rhs)
 
 Sorcerer::~Sorcerer( void )
 {
-    std::cout << std::uppercase << this->_name << ", " << std::uppercase << this->_type << ", is dead. Consequences will never be the same!" << std::endl;
+    std::cout << this->_name << ", " << this->_title << ", is dead. Consequences will never be the same!" << std::endl;
 }
 
 std::ostream & operator<<( std::ostream & flux,  Sorcerer const & rhs )
 {
-    flux <<  "I am " << std::uppercase << rhs.namegetter() << ", " << std::uppercase << rhs.typegetter() << ", and I like ponies!" << std::endl;
+    flux <<  "I am " << rhs.namegetter() << ", " << rhs.titlegetter() << ", and I like ponies!" << std::endl;
     return flux;
 }
 
@@ -56,9 +56,9 @@ std::string Sorcerer::namegetter( void ) const
     return this->_name;
 }
 
-std::string Sorcerer::typegetter( void ) const
+std::string Sorcerer::titlegetter( void ) const
 {
-    return this->_type;
+    return this->_title;
 }
 
 void Sorcerer::polymorph(Victim const &victim) const

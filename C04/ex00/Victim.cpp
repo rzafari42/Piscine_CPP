@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/31 10:23:25 by rzafari           #+#    #+#             */
-/*   Updated: 2021/05/31 20:18:11 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/01 14:39:34 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,19 +17,19 @@ Victim::Victim ( void )
     std::cout << "Default constructor ! (this text should not be printed)" << std::endl;
 }
 
-Victim::Victim( std::string name ) : _name(name)
-{
-    birthannoucement();
-}
-
 void Victim::birthannoucement( void )
 {
     std::cout << "Some random victim called " << this->_name << " just appeared!" << std::endl;
 }
 
+Victim::Victim( std::string name ) : _name(name)
+{
+    birthannoucement();
+}
+
 Victim::~Victim( void )
 {
-    std::cout << "Victim " << this->_name << " died for no apparent reasons!" << std::endl;
+    std::cout << "Victim " << this->_name << " just died for no apparent reasons!" << std::endl;
 }
 
 std::string Victim::namegetter( void) const
@@ -39,13 +39,13 @@ std::string Victim::namegetter( void) const
 
 std::ostream  & operator<<( std::ostream & flux, Victim  const & rhs)
 {
-    flux <<  "I'm " << std::uppercase << rhs.namegetter() << " and I like otters!" <<  std::endl;
+    flux <<  "I'm " << rhs.namegetter() << " and I like otters!" <<  std::endl;
     return flux;
 }
 
 void Victim::getPolymorphed( void ) const
 {
-    std::cout << this->_name << " was just polymorphed in a cute little sheep!" << std::endl;
+    std::cout << this->_name << " has been turned into a cute little sheep!" << std::endl;
 }
 
 Victim::Victim( Victim const & src )
