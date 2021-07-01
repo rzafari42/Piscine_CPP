@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/01 11:06:25 by rzafari           #+#    #+#             */
-/*   Updated: 2021/06/02 16:32:12 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/01 15:37:40 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ void Character::attack(Enemy *&enemy)
         return;
     if (this->_AP < this->_aweapon->getAPCost())
         return;
-    std::cout << this->_Name << " attaque " << enemy->getType() << " with a " << this->_aweapon->getName() << std::endl;
+    std::cout << this->_Name << " attacks " << enemy->getType() << " with a " << this->_aweapon->getName() << std::endl;
     
     this->_AP -= this->_aweapon->getAPCost();
     this->_aweapon->attack();
@@ -76,7 +76,7 @@ void Character::attack(Enemy *&enemy)
 std::ostream  & operator<<( std::ostream & flux, Character  const & rhs)
 {
     if (rhs.getWeapon())
-        flux << rhs.getName() << " has " << rhs.getAP() << " AP and carries a " << rhs.getWeapon()->getName() <<  std::endl;
+        flux << rhs.getName() << " has " << rhs.getAP() << " AP and wields a " << rhs.getWeapon()->getName() <<  std::endl;
     else
         flux << rhs.getName() << " has " << rhs.getAP() << " AP and is unarmed" << std::endl;
     return flux;

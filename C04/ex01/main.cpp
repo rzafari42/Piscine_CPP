@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/01 11:06:35 by rzafari           #+#    #+#             */
-/*   Updated: 2021/06/02 13:28:08 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/01 15:53:17 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,69 +20,68 @@
 
 int main()
 {
-    Character* moi = new Character("moi");
-    std::cout << *moi;
+    Character* me = new Character("me");
+    std::cout << *me;
     Enemy* b = new RadScorpion();
     Enemy* c = new SuperMutant();
 
     AWeapon* pr = new PlasmaRifle();
-    AWeapon* pf = new PowerFirst();
+    AWeapon* pf = new PowerFist();
 
-    moi->equip(pr);
-    std::cout << *moi;
-    moi->equip(pf);
+    me->equip(pr);
+    std::cout << *me;
+    me->equip(pf);
 
-    moi->attack(b);
-    std::cout << *moi;
-    moi->equip(pr);
-    std::cout << *moi;
-    moi->attack(b);
-    std::cout << *moi;
-    moi->attack(b);
-    std::cout << *moi;
+    me->attack(b);
+    std::cout << *me;
+    me->equip(pr);
+    std::cout << *me;
+    me->attack(b);
+    std::cout << *me;
+    me->attack(b);
+    std::cout << *me;
 
     std::cout << std::endl;
     std::cout << std::endl;
     std::cout << std::endl;
-    moi->recoverAP();
-    std::cout << *moi;
-    moi->attack(c);
-    std::cout << *moi;
-    moi->attack(c);
-    std::cout << *moi;
-    moi->attack(c);
-    std::cout << *moi;
-    moi->attack(c);
-    std::cout << *moi;
-    moi->attack(c);
-    std::cout << *moi;
-    moi->attack(c);
-    std::cout << *moi;
+    me->recoverAP();
+    std::cout << *me;
+    me->attack(c);
+    std::cout << *me;
+    me->attack(c);
+    std::cout << *me;
+    me->attack(c);
+    std::cout << *me;
+    me->attack(c);
+    std::cout << *me;
+    me->attack(c);
+    std::cout << *me;
+    me->attack(c);
+    std::cout << *me;
 
     std::cout << "\nThe attack under should not be printed" << std::endl;
-    moi->attack(c);
+    me->attack(c);
     std::cout << "\nThe attack under should not be printed" << std::endl;
-    moi->attack(c);
+    me->attack(c);
     std::cout << "\nRecovering ..." << std::endl;
-    moi->recoverAP();
-    std::cout << *moi;
+    me->recoverAP();
+    std::cout << *me;
     std::cout << "\nRecovering ..." << std::endl;
-    moi->recoverAP();
-    std::cout << *moi;
+    me->recoverAP();
+    std::cout << *me;
     std::cout << "\nRecovering ..." << std::endl;
-    moi->recoverAP();
-    std::cout << *moi;
+    me->recoverAP();
+    std::cout << *me;
     std::cout << "\nRecovering ..." << std::endl;
-    moi->recoverAP();
-    std::cout << *moi;
-
-
+    me->recoverAP();
+    std::cout << *me;
 
 
     delete b;
     delete c;
-    delete moi;
+    delete me;
     delete pr;
     delete pf;
+
     return 0;
 }

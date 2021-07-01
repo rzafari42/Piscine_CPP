@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/03 11:56:29 by rzafari           #+#    #+#             */
-/*   Updated: 2021/06/03 22:36:38 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/01 16:48:52 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,12 @@ class ICharacter;
 
 class AMateria
 {
-    private:
+    protected:
         unsigned int        _xp;
         std::string const   _type;
-    public:
         AMateria(void);
+
+    public:
         AMateria(AMateria const& src);
         virtual ~AMateria();
         AMateria & operator=( AMateria const& rhs );

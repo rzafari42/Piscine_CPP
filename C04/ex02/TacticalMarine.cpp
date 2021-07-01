@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 16:37:05 by rzafari           #+#    #+#             */
-/*   Updated: 2021/06/03 15:20:26 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/01 16:43:26 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 TacticalMarine::TacticalMarine( void )
 {
-    std::cout << "Tactical Marine ready for action!" << std::endl;
+    std::cout << "Tactical Marine ready for battle!" << std::endl;
 }
 
 TacticalMarine::TacticalMarine( TacticalMarine const& src )

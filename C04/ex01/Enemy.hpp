@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/01 11:06:32 by rzafari           #+#    #+#             */
-/*   Updated: 2021/06/01 14:29:46 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/01 15:24:23 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 
 class Enemy
 {
-    private:
     protected:
         int    _HP;
         std::string     _type;

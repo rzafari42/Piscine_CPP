@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 16:38:37 by rzafari           #+#    #+#             */
-/*   Updated: 2021/06/03 16:12:55 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/01 16:45:21 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ ISpaceMarine* AssaultTerminator::clone() const
 
 void AssaultTerminator::battleCry() const
 {
-    std::cout << "This code is unclean. Purify it!" << std::endl;
+    std::cout << "This code is unclean. PURIFY IT!" << std::endl;
 }
 
 void AssaultTerminator::rangedAttack() const

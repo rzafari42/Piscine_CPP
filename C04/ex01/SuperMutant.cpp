@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/01 11:06:51 by rzafari           #+#    #+#             */
-/*   Updated: 2021/06/01 16:12:47 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/01 15:29:12 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 SuperMutant::SuperMutant( void ) : Enemy(170, "Super Mutant")
 {
-    std::cout << "Gaaah. Break everything !" << std::endl;
+    std::cout << "Gaaah. Me want smash heads!" << std::endl;
 } 
 
 SuperMutant::SuperMutant( SuperMutant const & src )
@@ -40,7 +40,9 @@ SuperMutant & SuperMutant::operator=(  SuperMutant const & rhs )
 
 void SuperMutant::takeDamage( int damage )
 {
-    if (this->_HP >= (damage - 3))
+    if (damage < 0)
+        return;
+    else if (this->_HP >= (damage - 3))
         this->_HP -= (damage - 3);
     return;
 }

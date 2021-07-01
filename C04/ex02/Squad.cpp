@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 16:36:33 by rzafari           #+#    #+#             */
-/*   Updated: 2021/06/03 11:44:00 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/01 16:39:27 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,6 +100,6 @@ int Squad::push(ISpaceMarine* addunit)
     this->_unit = NULL;
     this->_unit = replace;
     this->_count += 1;
-
+    
     return this->_count;
 }

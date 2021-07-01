@@ -6,14 +6,14 @@
 #    By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/06 10:11:03 by rzafari           #+#    #+#              #
-#    Updated: 2021/06/06 11:44:57 by rzafari          ###   ########.fr        #
+#    Updated: 2021/07/01 16:27:22 by rzafari          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = Sorcerer
 CC = clang++
-FLAGS = -Wall -Wextra -Werror -g
-SRC = $(wildcard *.cpp)
+FLAGS = -Wall -Wextra -Werror
+SRC = AWeapon.cpp Character.cpp Enemy.cpp PlasmaRifle.cpp PowerFist.cpp RadScorpion.cpp SuperMutant.cpp main.cpp
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)
