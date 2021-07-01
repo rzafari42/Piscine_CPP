@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/25 12:06:20 by rzafari           #+#    #+#             */
-/*   Updated: 2021/06/30 19:08:05 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/06/30 19:09:56 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,11 +32,14 @@ class ClapTrap
         ~ClapTrap( void );                              //canonical
         ClapTrap & operator=( ClapTrap const &rhs );    //canonical
 
-        void attack( std::string const & target );
+        virtual void attack( std::string const & target );
         void takeDamage( unsigned int amount );
         void beRepaired( unsigned int amount );
 
         std::string getName() const;
+        unsigned int getHitPoints() const;
+        unsigned int getEnergyPoints() const;
+        unsigned int getAttackDamage() const;
 };
 
 #endif

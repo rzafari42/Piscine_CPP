@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/25 12:06:17 by rzafari           #+#    #+#             */
-/*   Updated: 2021/06/30 20:02:40 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/06/30 20:02:02 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,4 +80,19 @@ void ClapTrap::beRepaired( unsigned int amount )
 std::string ClapTrap::getName() const
 {
     return this->_Name;
+}
+
+unsigned int ClapTrap::getHitPoints() const
+{
+    return this->_Hitpoints;
+}
+
+unsigned int ClapTrap::getEnergyPoints() const
+{
+    return this->_Energypoints;
+}
+
+unsigned int ClapTrap::getAttackDamage() const
+{
+    return this->_Attackdamage;
 }

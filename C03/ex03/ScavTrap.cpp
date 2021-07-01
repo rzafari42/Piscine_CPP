@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 11:10:50 by rzafari           #+#    #+#             */
-/*   Updated: 2021/06/30 20:02:51 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/06/30 20:02:17 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,11 @@ ScavTrap::ScavTrap( ScavTrap const &src )
 {
     *this = src;
     return ;
+}
+
+void ScavTrap::attack( std::string const & target )
+{
+    std::cout << "Scav-Trap "<< this->getName() << " attacks " << target << ", causing " << this->getAttackDamage() << " points of damage " << std::endl;
 }
 
 void  ScavTrap::guardGate()

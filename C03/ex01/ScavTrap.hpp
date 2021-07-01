@@ -23,6 +23,8 @@ class ScavTrap : public ClapTrap
         ~ScavTrap( void );                              //canonical
         ScavTrap & operator=( ScavTrap const &rhs );    //canonical
 
+        virtual void attack( std::string const & target );
+
         void  guardGate();
 };
 

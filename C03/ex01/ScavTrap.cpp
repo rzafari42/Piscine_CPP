@@ -39,6 +39,11 @@ ScavTrap::ScavTrap( ScavTrap const &src )
     return ;
 }
 
+void ScavTrap::attack( std::string const & target )
+{
+    std::cout << "Scav-Trap "<< this->getName() << " attacks " << target << ", causing " << this->getAttackDamage() << " points of damage " << std::endl;
+}
+
 void  ScavTrap::guardGate()
 {
     std::cout << this->getName() << " has enterred in Gate keeper" << std::endl;

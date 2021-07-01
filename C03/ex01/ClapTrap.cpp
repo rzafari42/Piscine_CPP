@@ -81,3 +81,18 @@ std::string ClapTrap::getName() const
 {
     return this->_Name;
 }
+
+unsigned int ClapTrap::getHitPoints() const
+{
+    return this->_Hitpoints;
+}
+
+unsigned int ClapTrap::getEnergyPoints() const
+{
+    return this->_Energypoints;
+}
+
+unsigned int ClapTrap::getAttackDamage() const
+{
+    return this->_Attackdamage;
+}

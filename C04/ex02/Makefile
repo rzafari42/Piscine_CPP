@@ -6,14 +6,14 @@
 #    By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/06 10:11:03 by rzafari           #+#    #+#              #
-#    Updated: 2021/06/30 19:01:46 by rzafari          ###   ########.fr        #
+#    Updated: 2021/06/06 11:44:46 by rzafari          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = FragTrap
+NAME = Purified!
 CC = clang++
 FLAGS = -Wall -Wextra -Werror
-SRC = ClapTrap.cpp ScavTrap.cpp FragTrap.cpp main.cpp
+SRC = $(wildcard *.cpp)
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)
