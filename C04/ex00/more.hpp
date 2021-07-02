@@ -1,30 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   more.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/31 10:23:10 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/02 12:39:41 by rzafari          ###   ########.fr       */
+/*   Created: 2021/07/02 12:42:08 by rzafari           #+#    #+#             */
+/*   Updated: 2021/07/02 12:46:06 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Sorcerer.hpp"
-#include "Victim.hpp"
-#include "Peon.hpp"
-#include <fstream>
+#ifndef MORE_HPP
+# define More_HPP
+# include "Victim.hpp"
 
-int main()
+class   More: public Victim
 {
-    Sorcerer robert("Robert", "the Magnificent");
-    Victim jim("Jimmy");
-    Peon joe("Joe");
-    
-    std::cout << robert << jim << joe;
+    private:
+        std::string _Name;
+    public:
+        More();
+        ~More();
+        More(std::string name);
+        More(More const& src);
+        More & operator=(More const& rhs);
 
-    robert.polymorph(jim);
-    robert.polymorph(joe);
+        std::string namegetter( void ) const;
+        void virtual getPolymorphed(void) const;
+};
 
-    return 0;
-}
+#endif
