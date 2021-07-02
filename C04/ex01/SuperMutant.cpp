@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/01 11:06:51 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/01 15:29:12 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/02 15:23:17 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ SuperMutant::SuperMutant( void ) : Enemy(170, "Super Mutant")
 
 SuperMutant::SuperMutant( SuperMutant const & src )
 {
+    std::cout << "Gaaah. Me want smash heads!" << std::endl;
     *this = src;
     return;
 }

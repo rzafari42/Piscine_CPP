@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/01 11:06:35 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/01 15:53:17 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/02 15:37:55 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int main()
     Character* me = new Character("me");
     std::cout << *me;
     Enemy* b = new RadScorpion();
-    Enemy* c = new SuperMutant();
+    //Enemy* c = new SuperMutant();
 
     AWeapon* pr = new PlasmaRifle();
     AWeapon* pf = new PowerFist();
@@ -41,7 +41,7 @@ int main()
     me->attack(b);
     std::cout << *me;
 
-    std::cout << std::endl;
+    /*std::cout << std::endl;
     std::cout << std::endl;
     std::cout << std::endl;
     me->recoverAP();
@@ -81,7 +81,7 @@ int main()
     delete c;
     delete me;
     delete pr;
-    delete pf;
+    delete pf;*/
 
     return 0;
 }
