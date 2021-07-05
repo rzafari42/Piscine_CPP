@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/01 11:06:19 by rzafari           #+#    #+#             */
-/*   Updated: 2021/06/02 11:43:25 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/05 11:30:41 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class AWeapon
     public:
         AWeapon( AWeapon const & src );             //canonical
         AWeapon(std::string const & name, int apcost, int damage);
-        virtual ~AWeapon();                                 //canonical
+        virtual ~AWeapon();                         //canonical
         std::string virtual getName() const;
         int getAPCost() const;
         int getDamage() const;

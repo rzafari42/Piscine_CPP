@@ -6,18 +6,19 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/02 12:42:08 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/02 12:46:06 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/05 12:16:11 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef MORE_HPP
-# define More_HPP
+# define MORE_HPP
 # include "Victim.hpp"
 
-class   More: public Victim
+class More: public Victim
 {
     private:
         std::string _Name;
+
     public:
         More();
         ~More();

@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/01 11:06:53 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/02 15:34:21 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/05 11:40:09 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,11 @@
 class SuperMutant : public Enemy
 {
     public:
-        SuperMutant( void ); //cannocical
-        SuperMutant( SuperMutant const & src ); //cannocical
-        virtual ~SuperMutant(); //cannocical
-        SuperMutant & operator=(  SuperMutant const & rhs ); //cannocical
+        SuperMutant( void ); //cannonical
+        SuperMutant( SuperMutant const & src ); //cannonical
+        virtual ~SuperMutant(); //cannonical
+        SuperMutant & operator=(  SuperMutant const & rhs ); //cannonical
         virtual void takeDamage( int damage );
-
 };
 
 #endif

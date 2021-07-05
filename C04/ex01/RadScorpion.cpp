@@ -6,13 +6,13 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/01 11:06:47 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/02 15:23:21 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/05 11:44:25 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "RadScorpion.hpp"
 
-RadScorpion::RadScorpion( void ) : Enemy( 80, "RadScorpion" )
+RadScorpion::RadScorpion( void ) : Enemy(80, "RadScorpion" )
 {
     std::cout << "* click click click *" << std::endl;
 }

@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/31 10:23:21 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/02 14:30:59 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/05 11:40:09 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,16 +19,16 @@
 class Sorcerer
 {
     private:
-        Sorcerer( void );   //cannocical
+        Sorcerer( void );   //cannonical
         std::string _name;
         std::string _title;
         void birthannoucement( void );
 
     public:
-        Sorcerer ( Sorcerer const &src );               //cannocical
+        Sorcerer ( Sorcerer const &src );               //cannonical
         Sorcerer( std::string name, std::string title );
-        ~Sorcerer ( void );                             //cannocical
-        Sorcerer & operator=( Sorcerer const & rhs );   //cannocical
+        ~Sorcerer ( void );                             //cannonical
+        Sorcerer & operator=( Sorcerer const & rhs );   //cannonical
 
         std::string namegetter( void ) const;
         std::string titlegetter( void ) const;

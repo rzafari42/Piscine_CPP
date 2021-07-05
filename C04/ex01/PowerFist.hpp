@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/01 11:06:44 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/01 15:46:59 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/05 11:40:09 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,10 @@
 class PowerFist : public AWeapon
 {
     public:
-        PowerFist( void ); //cannocical
-        PowerFist( PowerFist const & src ); //cannocical
-        ~PowerFist( void ); //cannocical
-        PowerFist & operator=( PowerFist const & rhs ); //cannocical
+        PowerFist( void ); //cannonical
+        PowerFist( PowerFist const & src ); //cannonical
+        virtual ~PowerFist( void ); //cannonical
+        PowerFist & operator=( PowerFist const & rhs ); //cannonical
         virtual void attack() const; 
 };
 

@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/01 11:06:32 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/02 15:37:06 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/05 11:40:09 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,16 +20,16 @@ class Enemy
     protected:
         int    _HP;
         std::string     _type;
-        Enemy( void ); //cannocical
+        Enemy( void ); //cannonical
         
     public:
-        Enemy( Enemy const & src ); //cannocical
+        Enemy( Enemy const & src ); //cannonical
         Enemy(int hp, std::string const & type);
-        virtual ~Enemy(); //cannocical
+        virtual ~Enemy(); //cannonical
         std::string virtual getType() const;
         int getHP() const;
         virtual void takeDamage(int damage);
-        Enemy & operator=( Enemy const & rhs ); //cannocical
+        Enemy & operator=( Enemy const & rhs ); //cannonical
 };
 
 #endif

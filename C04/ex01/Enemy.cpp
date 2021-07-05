@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/01 11:06:30 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/02 15:23:31 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/05 11:59:07 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,9 +52,6 @@ int Enemy::getHP() const
 
 void Enemy::takeDamage( int damage )
 {
-    if (damage < 0)
-        return;
-    else if (this->_HP >= damage)
+    if (damage >= 0)
         this->_HP -= damage;
-    return;
 }
