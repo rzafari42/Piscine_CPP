@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 16:38:37 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/01 16:45:21 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/05 13:55:39 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,5 +53,5 @@ void AssaultTerminator::rangedAttack() const
 
 void AssaultTerminator::meleeAttack() const
 {
-    std::cout << "* attaque with chainfists *" << std::endl;
+    std::cout << "* attacks with chainfists *" << std::endl;
 }

@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 16:38:19 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/01 16:44:52 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/05 14:16:13 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,18 @@ int main( void )
 {
     ISpaceMarine* bob = new TacticalMarine;
     ISpaceMarine* jim = new AssaultTerminator;
-    
+    ISpaceMarine* james = new AssaultTerminator;
+
     ISquad* vlc = new Squad;
+    std::cout << std::endl;
+
     vlc->push(bob);
+    vlc->push(NULL);
     vlc->push(jim);
+    vlc->push(NULL);
+    vlc->push(bob);
+    vlc->push(NULL);
+    vlc->push(james);
 
     for (int i = 0; i < vlc->getCount(); ++i)
     {
@@ -30,6 +38,7 @@ int main( void )
         cur->battleCry();
         cur->rangedAttack();
         cur->meleeAttack();
+        std::cout << std::endl;
     }
     delete vlc;
 

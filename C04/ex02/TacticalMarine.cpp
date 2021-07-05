@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 16:37:05 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/01 16:43:26 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/05 13:55:18 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,5 +52,5 @@ void TacticalMarine::rangedAttack() const
 
 void TacticalMarine::meleeAttack() const
 {
-    std::cout << "* attaque with chainsword *" << std::endl;
+    std::cout << "* attacks with chainsword *" << std::endl;
 }
