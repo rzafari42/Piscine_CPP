@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/03 11:56:40 by rzafari           #+#    #+#             */
-/*   Updated: 2021/06/04 14:05:13 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/05 16:12:00 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,5 +36,6 @@ AMateria *Ice::clone(void) const
 
 void Ice::use(ICharacter& target)
 {
+    AMateria::use(target);
     std::cout << "* shoots an ice bolt at " << target.getName() << " *" << std::endl;
 }

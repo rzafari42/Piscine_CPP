@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/03 11:56:32 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/01 17:22:12 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/05 15:49:20 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ Character::Character(std::string name) : _name(name)
 
 Character::Character(Character const& src)
 {
+    bzero(&this->_invent, sizeof(this->_invent));
     *this = src;
     return;
 }

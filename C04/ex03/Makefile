@@ -6,14 +6,14 @@
 #    By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/03 11:57:32 by rzafari           #+#    #+#              #
-#    Updated: 2021/06/04 16:11:02 by rzafari          ###   ########.fr        #
+#    Updated: 2021/07/05 14:43:30 by rzafari          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = BocalFantasy
 CC = clang++
 FLAGS = -Wall -Wextra -Werror -g
-SRC = $(wildcard *.cpp)
+SRC = AMateria.cpp Ice.cpp Cure.cpp Character.cpp MateriaSource.cpp main.cpp
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)

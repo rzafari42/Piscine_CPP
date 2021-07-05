@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/03 11:56:26 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/01 17:05:17 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/05 16:16:23 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,5 +48,6 @@ unsigned int AMateria::getXP() const
 void AMateria::use(ICharacter& target)
 {
     (void)target;
+    std::cout << "Use amateria" << std::endl;
     this->_xp += 10;
 }

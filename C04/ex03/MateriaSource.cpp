@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/03 11:57:10 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/01 17:27:47 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/05 16:03:29 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ MateriaSource::MateriaSource()
 
 MateriaSource::MateriaSource(MateriaSource const & src) 
 {
+    bzero(&this->_cpy, sizeof(this->_cpy));
     *this = src;
     return;
 }
@@ -69,5 +70,5 @@ AMateria* MateriaSource::createMateria(std::string const & type)
         if ( this->_cpy[i]->getType() == type )
             return (this->_cpy[i]->clone());
     }
-    return 0;
+    return NULL;
 }
