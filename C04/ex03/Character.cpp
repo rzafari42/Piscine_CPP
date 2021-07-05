@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/03 11:56:32 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/05 15:49:20 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/05 22:20:30 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,5 +88,5 @@ void Character::use(int idx, ICharacter &target)
     if (idx < 0 || idx > 3)
         return;
     else if (this->_invent[idx] != NULL)
-        this->_invent[idx]->use(target);
+       this->_invent[idx]->use(target);
 }

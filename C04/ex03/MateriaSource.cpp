@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/03 11:57:10 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/05 16:03:29 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/05 23:46:05 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,11 @@ MateriaSource::~MateriaSource()
 {
     for (int i = 0; i < 4; i++)
     {
-        delete this->_cpy[i];
-        this->_cpy[i] = NULL;
+        if (this->_cpy[i])
+        {
+            delete this->_cpy[i];
+            this->_cpy[i] = NULL;
+        }
     }
 }
 
