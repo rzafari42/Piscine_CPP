@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/01 11:06:35 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/06 10:14:28 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/06 14:41:53 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #include "PowerFist.hpp"
 #include "RadScorpion.hpp"
 #include "SuperMutant.hpp"
+#include "BadRabbits.hpp"
 
 int main()
 {
@@ -25,6 +26,7 @@ int main()
 	Enemy* b = new RadScorpion();
 	AWeapon* pr = new PlasmaRifle();
 	AWeapon* pf = new PowerFist();
+
 	me->equip(pr);
 	std::cout << *me;
 	me->equip(pf);
@@ -41,6 +43,7 @@ int main()
     std::cout << std::endl;
     std::cout << std::endl;
     std::cout << std::endl;
+
     Enemy* c = new SuperMutant();
 
     me->recoverAP();
@@ -75,11 +78,27 @@ int main()
     me->recoverAP();
     std::cout << *me;
 
+    std::cout << std::endl;
+    Enemy* d = new BadRabbits();
+    std::cout << "Rabbits HP: " << d->getHP() << std::endl;
+    me->attack(d);
+    std::cout << *me;
+    me->attack(d);
+    std::cout << *me;
+    me->attack(d);
+    std::cout << *me;
+    me->attack(d);
+    std::cout << *me;
+    me->attack(d);
+    std::cout << *me;
+    std::cout << "Rabbits HP: " << d->getHP() << std::endl;
+
     delete me;
     delete b;
     delete pr;
     delete pf;
     delete c;
+    delete d;
 
     return 0;
 }

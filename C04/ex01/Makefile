@@ -6,14 +6,14 @@
 #    By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/06 10:11:03 by rzafari           #+#    #+#              #
-#    Updated: 2021/07/02 14:47:08 by rzafari          ###   ########.fr        #
+#    Updated: 2021/07/06 14:29:27 by rzafari          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = Wasteland
 CC = clang++
 FLAGS = -Wall -Wextra -Werror
-SRC = AWeapon.cpp Character.cpp Enemy.cpp PlasmaRifle.cpp PowerFist.cpp RadScorpion.cpp SuperMutant.cpp main.cpp
+SRC = AWeapon.cpp Character.cpp Enemy.cpp PlasmaRifle.cpp PowerFist.cpp RadScorpion.cpp SuperMutant.cpp BadRabbits.cpp main.cpp
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)
