@@ -75,5 +75,11 @@ int main()
     me->recoverAP();
     std::cout << *me;
 
+    delete me;
+    delete b;
+    delete pr;
+    delete pf;
+    delete c;
+
     return 0;
 }

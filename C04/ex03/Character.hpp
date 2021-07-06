@@ -14,6 +14,7 @@
 # define CHARACTER_HPP
 # include <iostream>
 # include <string>
+#include <strings.h>
 # include "ICharacter.hpp"
 
 class Character : public ICharacter

@@ -15,7 +15,7 @@
 #include "TacticalMarine.hpp"
 #include "AssaultTerminator.hpp"
 
-int main( void )
+/*int main( void )
 {
     ISpaceMarine* bob = new TacticalMarine;
     ISpaceMarine* jim = new AssaultTerminator;
@@ -43,10 +43,10 @@ int main( void )
     delete vlc;
 
     return 0;
-}
+}*/
 
 
-/*int main()
+int main()
 {
     ISpaceMarine* bob = new TacticalMarine;
     ISpaceMarine* jim = new AssaultTerminator;
@@ -64,4 +64,4 @@ int main( void )
     delete vlc;
 
     return 0;
-}*/
+}
