@@ -6,14 +6,14 @@
 #    By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/03 11:57:32 by rzafari           #+#    #+#              #
-#    Updated: 2021/06/10 10:03:35 by rzafari          ###   ########.fr        #
+#    Updated: 2021/07/07 00:07:07 by rzafari          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = Form
 CC = clang++
 FLAGS = -Wall -Wextra -Werror
-SRC = $(wildcard *.cpp)
+SRC = Bureaucrat.cpp Form.cpp Intern.cpp PresidentialPardonForm.cpp RobotomyRequestForm.cpp ShrubberyCreationForm.cpp main.cpp
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)
