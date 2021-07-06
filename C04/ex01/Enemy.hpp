@@ -6,13 +6,10 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/01 11:06:32 by rzafari           #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2021/07/06 13:54:30 by rzafari          ###   ########.fr       */
-=======
-/*   Updated: 2021/07/06 09:56:46 by rzafari          ###   ########.fr       */
->>>>>>> 411c1962fd45b811d7ad625ebbaa774cf01d6faa
+/*   Updated: 2021/07/06 14:17:52 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #ifndef ENEMY_HPP
 # define ENEMY_HPP
