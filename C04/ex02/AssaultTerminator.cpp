@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 16:38:37 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/05 13:55:39 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/06 10:29:20 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ AssaultTerminator::AssaultTerminator( void )
 
 AssaultTerminator::AssaultTerminator( AssaultTerminator const& src )
 {
+    std::cout << "* teleports from space *" << std::endl;
     *this = src;
     return;
 }

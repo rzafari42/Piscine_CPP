@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/01 11:06:28 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/05 11:35:09 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/06 10:05:59 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,6 @@ class Character
         void attack(Enemy *&enemy);
 
         std::string getName() const;
-        
         AWeapon *getWeapon(void) const;
         int getAP(void) const;
 

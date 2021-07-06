@@ -6,13 +6,13 @@
 #    By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/06 10:11:03 by rzafari           #+#    #+#              #
-#    Updated: 2021/07/05 14:15:47 by rzafari          ###   ########.fr        #
+#    Updated: 2021/07/05 14:42:47 by rzafari          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = Purified!
 CC = clang++
-FLAGS = -Wall -Wextra -Werror -g3 -fsanitize=address
+FLAGS = -Wall -Wextra -Werror
 SRC = AssaultTerminator.cpp Squad.cpp TacticalMarine.cpp main.cpp
 OBJ = $(SRC:.cpp=.o)
 

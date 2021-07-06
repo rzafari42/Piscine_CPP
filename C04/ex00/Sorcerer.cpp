@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/31 10:23:16 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/01 14:40:14 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/06 09:47:11 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ Sorcerer::Sorcerer( std::string name, std::string title ) : _name(name), _title(
 
 Sorcerer::Sorcerer( Sorcerer const &src )
 {
+    birthannoucement();
     *this = src;
     return;
 }
