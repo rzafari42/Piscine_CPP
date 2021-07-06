@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 16:36:33 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/01 16:39:27 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/06 10:27:14 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ Squad::~Squad( void )
             delete this->_unit[i];
             this->_unit[i] = NULL;
         }
-        delete this->_unit;
+        delete [] this->_unit;
         this->_unit = NULL;
 	}
 	return ;
@@ -51,7 +51,7 @@ Squad & Squad::operator=( Squad const & rhs )
             delete this->_unit[i];
             this->_unit[i] = NULL;
         }
-        delete this->_unit;
+        delete [] this->_unit;
         this->_unit = NULL;
     }
     if ( this != &rhs )
@@ -82,12 +82,12 @@ int Squad::push(ISpaceMarine* addunit)
     int i;
 
     if (addunit == NULL)
-        return 0;
+        return -1;
 
     for (i = 0; i < this->_count; i++)
     {
         if (this->_unit[i] == addunit)
-            return 0;
+            return -1;
     }
     ISpaceMarine** replace = new ISpaceMarine*[this->_count + 1];
     for (i = 0; i < this->_count; i++)
@@ -96,7 +96,7 @@ int Squad::push(ISpaceMarine* addunit)
         this->_unit[i] = NULL;
     }
     replace[this->_count] = addunit;
-    delete this->_unit;
+    delete [] this->_unit;
     this->_unit = NULL;
     this->_unit = replace;
     this->_count += 1;

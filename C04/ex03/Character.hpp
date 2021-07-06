@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/03 11:56:34 by rzafari           #+#    #+#             */
-/*   Updated: 2021/06/03 19:56:45 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/06 11:03:37 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define CHARACTER_HPP
 # include <iostream>
 # include <string>
+#include <strings.h>
 # include "ICharacter.hpp"
 
 class Character : public ICharacter

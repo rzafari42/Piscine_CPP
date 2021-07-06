@@ -12,7 +12,7 @@
 
 NAME = BocalFantasy
 CC = clang++
-FLAGS = -Wall -Wextra -Werror -g3 -fsanitize=address
+FLAGS = -Wall -Wextra -Werror
 SRC = AMateria.cpp Ice.cpp Cure.cpp Character.cpp MateriaSource.cpp main.cpp
 OBJ = $(SRC:.cpp=.o)
 

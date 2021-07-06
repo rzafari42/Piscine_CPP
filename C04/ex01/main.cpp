@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/01 11:06:35 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/05 12:08:40 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/06 10:14:28 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,6 +74,12 @@ int main()
     std::cout << "\nRecovering ..." << std::endl;
     me->recoverAP();
     std::cout << *me;
+
+    delete me;
+    delete b;
+    delete pr;
+    delete pf;
+    delete c;
 
     return 0;
 }

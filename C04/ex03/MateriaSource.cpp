@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/03 11:57:10 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/05 23:46:05 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/06 11:04:55 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,5 +73,5 @@ AMateria* MateriaSource::createMateria(std::string const & type)
         if ( this->_cpy[i]->getType() == type )
             return (this->_cpy[i]->clone());
     }
-    return NULL;
+    return 0;
 }

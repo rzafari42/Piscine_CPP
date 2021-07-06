@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/02 14:15:46 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/05 12:22:21 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/06 09:48:28 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ More::More(std::string name) : Victim(name), _Name(name)
 
 More::More( More const& src )
 {
+    std::cout << "Hey !! I am " << this->_Name << std::endl;
     *this = src;
     return;
 }

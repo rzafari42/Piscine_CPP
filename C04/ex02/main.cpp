@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 16:38:19 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/05 14:18:29 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/06 10:40:03 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include "TacticalMarine.hpp"
 #include "AssaultTerminator.hpp"
 
-int main( void )
+/*int main( void )
 {
     ISpaceMarine* bob = new TacticalMarine;
     ISpaceMarine* jim = new AssaultTerminator;
@@ -43,10 +43,10 @@ int main( void )
     delete vlc;
 
     return 0;
-}
+}*/
 
 
-/*int main()
+int main()
 {
     ISpaceMarine* bob = new TacticalMarine;
     ISpaceMarine* jim = new AssaultTerminator;
@@ -64,4 +64,4 @@ int main( void )
     delete vlc;
 
     return 0;
-}*/
+}
