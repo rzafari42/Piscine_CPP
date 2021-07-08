@@ -1,37 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   PlasmaRifle.cpp                                    :+:      :+:    :+:   */
+/*   FatalWeapon.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/06/01 11:06:37 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/08 12:07:13 by rzafari          ###   ########.fr       */
+/*   Created: 2021/07/08 11:56:02 by rzafari           #+#    #+#             */
+/*   Updated: 2021/07/08 12:06:47 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "PlasmaRifle.hpp"
+#include "FatalWeapon.hpp"
 
-PlasmaRifle::PlasmaRifle( void ) : AWeapon( "Plasma Rifle", 5, 21 )
+FatalWeapon::FatalWeapon( void ) : AWeapon( "Fatal Weapon", 20, 70 )
 {
 }
 
-PlasmaRifle::PlasmaRifle( PlasmaRifle const & src ) : AWeapon( "Plasma Rifle", 5, 21 )
+FatalWeapon::FatalWeapon( FatalWeapon const & src) : AWeapon( "Fatal Weapon", 20, 70 )
 {
     *this = src;
     return;
 }
 
-PlasmaRifle::~PlasmaRifle( void )
+FatalWeapon::~FatalWeapon( void )
 {
 }
 
-void PlasmaRifle::attack() const
+void FatalWeapon::attack() const
 {
-    std::cout << "* piouuu piouuu piouuu *" << std::endl;
+    std::cout << "* BANGG !!! *" << std::endl;
 }
 
-PlasmaRifle & PlasmaRifle::operator=( PlasmaRifle const & rhs )
+FatalWeapon & FatalWeapon::operator=( FatalWeapon const & rhs )
 {
     if ( this != &rhs )
     {

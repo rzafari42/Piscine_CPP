@@ -1,30 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   PowerFist.hpp                                      :+:      :+:    :+:   */
+/*   FatalWeapon.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/06/01 11:06:44 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/08 12:01:55 by rzafari          ###   ########.fr       */
+/*   Created: 2021/07/08 11:55:58 by rzafari           #+#    #+#             */
+/*   Updated: 2021/07/08 12:06:49 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef POWERFIST_HPP
-# define POWERFIST_HPP
-# include <iostream>
-# include <string>
+#ifndef FATAL_WEAPON_HPP
+# define FATAL_WEAPON_HPP
+
 # include "AWeapon.hpp"
 
-class PowerFist : public AWeapon
+class FatalWeapon: public AWeapon
 {
     public:
-        PowerFist( void ); //cannonical
-        PowerFist( PowerFist const & src ); //cannonical
-        virtual ~PowerFist( void ); //cannonical
-        
-        PowerFist & operator=( PowerFist const & rhs ); //cannonical
-        virtual void attack() const; 
+        FatalWeapon( void );
+        FatalWeapon(FatalWeapon const & src);
+        virtual ~FatalWeapon( void );
+
+        FatalWeapon & operator=( FatalWeapon const & rhs );
+        void attack() const;
 };
 
 #endif

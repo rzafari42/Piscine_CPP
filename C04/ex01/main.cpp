@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/01 11:06:35 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/06 14:41:53 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/08 12:09:09 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 #include "Enemy.hpp"
 #include "PlasmaRifle.hpp"
 #include "PowerFist.hpp"
+#include "FatalWeapon.hpp"
 #include "RadScorpion.hpp"
 #include "SuperMutant.hpp"
 #include "BadRabbits.hpp"
@@ -26,6 +27,7 @@ int main()
 	Enemy* b = new RadScorpion();
 	AWeapon* pr = new PlasmaRifle();
 	AWeapon* pf = new PowerFist();
+	AWeapon* fw = new FatalWeapon();
 
 	me->equip(pr);
 	std::cout << *me;
@@ -46,6 +48,7 @@ int main()
 
     Enemy* c = new SuperMutant();
 
+    me->equip(fw);
     me->recoverAP();
     std::cout << *me;
     me->attack(c);
