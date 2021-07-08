@@ -13,7 +13,7 @@
 NAME = Bureaucrate
 CC = clang++
 FLAGS = -Wall -Wextra -Werror
-SRC = Bureaucrate.cpp Form.cpp main.cpp
+SRC = Bureaucrat.cpp Form.cpp main.cpp
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)
