@@ -6,7 +6,7 @@
 #    By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/03 11:57:32 by rzafari           #+#    #+#              #
-#    Updated: 2021/07/07 09:58:34 by rzafari          ###   ########.fr        #
+#    Updated: 2021/07/08 11:06:38 by rzafari          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ FLAGS = -Wall -Wextra -Werror
 SRC = convert.cpp main.cpp
 OBJ = $(SRC:.cpp=.o)
 
-all: $(NAME)
+all: $(NAM
 
 .cpp.o:
 	$(CC) $(FLAGS) -c $< -o $@

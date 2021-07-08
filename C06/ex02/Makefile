@@ -6,14 +6,14 @@
 #    By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/03 11:57:32 by rzafari           #+#    #+#              #
-#    Updated: 2021/07/08 10:37:25 by rzafari          ###   ########.fr        #
+#    Updated: 2021/07/08 11:06:35 by rzafari          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = Base
 CC = clang++
-FLAGS = -Wall -Wextra -Werror #-fsanitize=address -g3
-SRC = $(wildcard *.cpp)
+FLAGS = -Wall -Wextra -Werror
+SRC = main.cpp Base.cpp
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)
