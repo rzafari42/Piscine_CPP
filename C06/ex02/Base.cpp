@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/17 15:31:56 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/07 15:25:46 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/08 10:56:59 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,14 @@ Base::~Base(){}
 
 Base * generate(void)
 {
-    std::srand(time(nullptr));
-    int id = rand() % 3;
+    std::srand(std::time(nullptr));
+    int id = std::rand() % 3;
 
-    if (id == 1)
+    if (id == 0)
         return new A;
-    else if (id == 2)
+    else if (id == 1)
         return new B;
-    else if (id == 3)
+    else if (id == 2)
         return new C;
     return NULL;
 }
@@ -32,18 +32,38 @@ void identify(Base* p)
 {
     if (dynamic_cast<A*>(p))
         std::cout << "A" << std::endl;
-    if (dynamic_cast<B*>(p))
+    else if (dynamic_cast<B*>(p))
         std::cout << "B" << std::endl;
-    if (dynamic_cast<C*>(p))
+    else if (dynamic_cast<C*>(p))
         std::cout << "C" << std::endl;
 }
 
 void identify(Base& p)
 {
-if (dynamic_cast<A>(p))
-    std::cout << "A" << std::endl;
-if (dynamic_cast<B*>(&p))s
-    std::cout << "B" << std::endl;
-if (dynamic_cast<C*>(&p))
-    std::cout << "C" << std::endl;
+    try
+    { 
+        A &a = dynamic_cast<A&>(p);
+        (void)a;
+        std::cout << "A" << std::endl;
+        return;
+    }
+    catch (std::bad_cast){ }
+
+    try
+    { 
+        B &b = dynamic_cast<B&>(p);
+        (void)b;
+        std::cout << "B" << std::endl;
+        return;
+    }
+    catch (std::bad_cast) {}
+
+    try
+    { 
+        C &c = dynamic_cast<C&>(p);
+        (void)c;
+        std::cout << "C" << std::endl;
+        return;
+    }
+    catch (std::bad_cast) {}
 }
