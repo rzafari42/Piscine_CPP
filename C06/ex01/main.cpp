@@ -5,22 +5,23 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/07 14:36:14 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/08 11:03:02 by rzafari          ###   ########.fr       */
+/*   Created: 2021/07/09 10:26:18 by rzafari           #+#    #+#             */
+/*   Updated: 2021/07/09 10:30:33 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Base.hpp"
+#include "serialisation.hpp"
 
 int main(void)
 {
-    Base *base = generate();
-    std::cout << "Identify from Pointer:" <<  std::endl;
-    identify_from_pointer(base);
-    std::cout << std::endl;
-    std::cout << "Identify from Referecne:" <<  std::endl;
-    identify_from_reference(*base);
+    uintptr_t raw;
+    Data init;
+    Data *res;
 
-    delete base;
+    init.str = "Hi";
+    raw = serialize(&init);
+    res = deserialize(raw);
+    printres(res, &init);
+
     return 0;
 }

@@ -16,7 +16,7 @@ FLAGS = -Wall -Wextra -Werror
 SRC = convert.cpp main.cpp
 OBJ = $(SRC:.cpp=.o)
 
-all: $(NAM
+all: $(NAME)
 
 .cpp.o:
 	$(CC) $(FLAGS) -c $< -o $@
