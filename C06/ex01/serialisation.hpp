@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/16 14:00:10 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/07 14:06:44 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/09 10:29:59 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ struct Data {
 
 uintptr_t serialize(Data * ptr);
 Data * deserialize(uintptr_t raw);
-void printres(Data *res);
-
+void printres(Data *res, Data *init);
 
 #endif
