@@ -12,7 +12,7 @@
 
 NAME = Array
 CC = clang++
-FLAGS = -Wall -Wextra -Werror #-fsanitize=address -g3
+FLAGS = -Wall -Wextra -Werror
 SRC = main.cpp
 OBJ = $(SRC:.cpp=.o)
 

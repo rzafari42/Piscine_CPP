@@ -35,7 +35,7 @@ class Array
 };
 
 template<typename T>
-Array<T>::Array() : tb(new T[NULL]()), tablen(0) {}
+Array<T>::Array() : tb(NULL), tablen(0) {}
 
 template<typename T>
 Array<T>::Array(unsigned int n) : tb(new T[n]()), tablen(n) {}
