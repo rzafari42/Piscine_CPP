@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/07 15:37:54 by rzafari           #+#    #+#             */
-/*   Updated: 2021/06/09 12:25:54 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/09 15:48:24 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,26 +24,17 @@ class Bureaucrat
     class GradeTooHighException: public std::exception
     {
         public:
-            virtual const char* what() const throw()
-            {
-                    return ("Problem with the grade value: too high");        
-            }
+            virtual const char* what() const throw();
     };
     class GradeTooLowException: public std::exception
     {
         public:
-            virtual const char* what() const throw()
-            {
-                    return ("Problem with the grade value: too low");        
-            }
+            virtual const char* what() const throw();
     };
     class GradeInvalidException: public std::exception
     {
         public:
-            virtual const char* what() const throw()
-            {
-                    return ("Problem with the grade value: negative value :(");        
-            }
+            virtual const char* what() const throw();
     };
 
     private:
@@ -62,7 +53,7 @@ class Bureaucrat
         
         void    increment();
         void    decrement();
-        void    signForm(Form const& f) const;
+        void    signForm(Form & f) const;
 };
 
 std::ostream & operator<<( std::ostream & flux, Bureaucrat const& rhs );
