@@ -23,8 +23,6 @@ struct Data {
     std::string str;
 };
 
-void *concatenate(char *tab1, char *tab2, char *tab3);
-void fill_chartab(char *tab1, char *tab2);
 uintptr_t serialize(Data * ptr);
 Data * deserialize(uintptr_t raw);
 void printres(Data *res);
