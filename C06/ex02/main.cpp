@@ -16,10 +16,10 @@ int main(void)
 {
     Base *base = generate();
     std::cout << "Identify from Pointer:" <<  std::endl;
-    identify(base);
+    identify_from_pointer(base);
     std::cout << std::endl;
     std::cout << "Identify from Referecne:" <<  std::endl;
-    identify(*base);
+    identify_from_reference(*base);
 
     delete base;
     return 0;

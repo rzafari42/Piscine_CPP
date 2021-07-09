@@ -23,7 +23,7 @@ uintptr_t serialize(Data * ptr)
 
 Data * deserialize(uintptr_t raw)
 {
-    Data *data = new Data;
+    Data *data;
 
     data = reinterpret_cast<Data *>(raw);
 
