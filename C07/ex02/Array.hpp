@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/20 15:36:41 by rzafari           #+#    #+#             */
-/*   Updated: 2021/06/20 18:33:13 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/09 14:04:19 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ class Array
 };
 
 template<typename T>
-Array<T>::Array() : tb(NULL), tablen(0) {}
+Array<T>::Array() : tb(new T[NULL]()), tablen(0) {}
 
 template<typename T>
 Array<T>::Array(unsigned int n) : tb(new T[n]()), tablen(n) {}
@@ -43,7 +43,7 @@ Array<T>::Array(unsigned int n) : tb(new T[n]()), tablen(n) {}
 template<typename T>
 Array<T>::~Array()
 {
-    delete [] this->tb;
+   delete [] this->tb;
 };
 
 
@@ -58,7 +58,6 @@ Array<T> & Array<T>::operator=(Array const& rhs)
 {
     if (this != &rhs)
     {
-        delete [] this->tb;
         if (rhs.tablen != 0)
             this->tb = new T[rhs.tablen];
         else

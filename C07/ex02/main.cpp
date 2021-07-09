@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/20 16:45:41 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/08 11:42:02 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/09 14:24:31 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,7 @@ template<typename T>
 void fill_tab(Array<T> &tab)
 {
     for (int i = 0; i < tab.size(); i++)
-    {
         tab[i] = i * 2;
-    }
 }
 
 template<typename T>
@@ -43,21 +41,14 @@ void print_content(Array<T> &tab)
 template<typename T>
 void unprintable_test(Array<T> &tab)
 {
-    try
-    {
-        std::cout << tab[10000] << std::endl;
-    }
-    catch (std::exception &e)
-    {
-        std::cout << "Error: Cannot access to a non allocated space in memory !" << std::endl;
-    }
+    std::cout << tab[10000] << std::endl;
 }
 
 int main(void)
 {
     Array<int> tab_(5);
     Array<char> nothinginside;
-    Array<int> cpy = tab_;
+    Array<int> assign;
 
     std::cout << "Filling the 'tab_' array ..." << std::endl;
     fill_tab(tab_);
@@ -66,21 +57,51 @@ int main(void)
     std::cout << std::endl;
     std::cout << "tab_ : ";
     print_content(tab_);
+
+    std::cout << std::endl;
+    std::cout << "Size of the 'nothinginside' array: ";
+    print_size(nothinginside);
     std::cout << "nothinginside : ";
     print_content(nothinginside);
 
-
     std::cout << std::endl;
     std::cout << ">> Let's try to access a non allocated memory" << std::endl;
-    unprintable_test(tab_);
-   
+    try
+    {
+        unprintable_test(tab_);
+    }
+    catch(std::exception &e)
+    {
+        std::cout << "Error: Cannot access to a non allocated space in memory !" << std::endl;
+    }
     std::cout << std::endl;
     
     std::cout << std::endl;
-    std::cout << ">> Let's copy the '_tab' array" << std::endl;
+    std::cout << ">> Let's assign '_tab' to the 'assign' array" << std::endl;
     std::cout << ">> 'cpy' array: ";
-    cpy = tab_;
+    assign = tab_;
+    print_content(assign);
+    std::cout << ">> Let's change a value in the 'assign' array" << std::endl;
+    assign[0] = 42;
+    std::cout << ">> New 'assign' array: ";
+    print_content(assign);
+    std::cout << ">> First '_tab' array: ";
+    print_content(tab_);
+
+    std::cout << std::endl;
+    std::cout << std::endl;
+    std::cout << ">> Let's cpy '_tab' to the 'cpy' array" << std::endl;
+    Array<int> cpy(tab_);
+    std::cout << ">> 'cpy' array: ";
     print_content(cpy);
+    std::cout << ">> Let's change a value in the 'cpy' array" << std::endl;
+    cpy[3] = 10;
+    std::cout << ">> New 'cpy array: ";
+    print_content(cpy);
+    std::cout << ">> First '_tab' array: ";
+    print_content(tab_);
+
+
 
     return 0;
 }

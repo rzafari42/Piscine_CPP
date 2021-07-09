@@ -6,14 +6,14 @@
 #    By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/03 11:57:32 by rzafari           #+#    #+#              #
-#    Updated: 2021/06/20 15:01:15 by rzafari          ###   ########.fr        #
+#    Updated: 2021/07/09 13:47:29 by rzafari          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = Iter
 CC = clang++
-FLAGS = -Wall -Wextra -Werror -fsanitize=address -g3
-SRC = $(wildcard *.cpp)
+FLAGS = -Wall -Wextra -Werror
+SRC = main.cpp
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)

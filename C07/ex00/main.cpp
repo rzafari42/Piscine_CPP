@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/20 13:05:18 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/08 11:22:19 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/09 13:46:28 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@ int main(void)
     char e = 'a';
     char f = 'b';
     int i = 185000;
-    int j = 185000; 
+    int j = 185000;
+
     std::string s1 = "Hello";
     std::string s2 = "Bonjour";
 
