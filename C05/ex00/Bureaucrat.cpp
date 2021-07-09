@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/07 15:37:49 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/06 13:42:14 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/09 08:10:06 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,12 +70,12 @@ void Bureaucrat::increment( void )
     {
         if ( this->_grade == 1 )
             throw Bureaucrat::GradeTooHighException();
+        this->_grade--;
     }
     catch(const Bureaucrat::GradeTooHighException::exception &e)
     {
         std::cerr << this->getName() << ": " << e.what() << " (" << this->getGrade() << ")" << std::endl;
     }
-    this->_grade--;
 }
 
 void Bureaucrat::decrement( void )
@@ -84,12 +84,12 @@ void Bureaucrat::decrement( void )
     {
         if ( this->_grade == 150 )
             throw Bureaucrat::GradeTooLowException();
+        this->_grade++;
     }
     catch(const Bureaucrat::GradeTooLowException::exception &e)
     {
         std::cerr << this->getName() << ": " << e.what() << " (" << this->getGrade() << ")" << std::endl;
     }
-    this->_grade++;
 }
 
 std::ostream & operator<<( std::ostream & flux, Bureaucrat const& rhs )
