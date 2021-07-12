@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/20 14:03:22 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/09 13:53:48 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/12 14:54:02 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void printtab(T const i)
 }
 
 template<typename T>
-void iter(T *addr, unsigned int const len, void (*func)(T &))
+void iter(T *addr, unsigned int const len, void (*func)(T const &))
 {
     for (unsigned int i = 0; i < len; i++)
         func(addr[i]);

@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/20 14:03:19 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/09 13:53:32 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/12 14:54:01 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ int main(void)
     std::cout << std::endl;
     
     iter(tab3, sizeof(tab3)/sizeof(*tab3), &printtab);
+
 
     return 0;
 }
