@@ -6,11 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/20 16:45:41 by rzafari           #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2021/07/12 14:36:30 by rzafari          ###   ########.fr       */
-=======
-/*   Updated: 2021/07/09 15:52:48 by rzafari          ###   ########.fr       */
->>>>>>> 78833816a5a21072905ff6c969d5838d9fe6f293
+/*   Updated: 2021/07/12 14:51:25 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,12 +50,12 @@ int main(void)
     Array<char> nothinginside;
     Array<int> assign;
 
-   /* Array<int> v(6);
+    Array<int> v(6);
     v = tab_;
     
     std::cout << tab_[0] << std::endl;
     
-    std::cout << v[0] << std::endl;*/
+    std::cout << v[0] << std::endl;
     
     std::cout << "Filling the 'tab_' array ..." << std::endl;
     fill_tab(tab_);
