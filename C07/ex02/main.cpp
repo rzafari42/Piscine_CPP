@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/20 16:45:41 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/09 14:24:31 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/12 14:36:30 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,10 +46,17 @@ void unprintable_test(Array<T> &tab)
 
 int main(void)
 {
-    Array<int> tab_(5);
+    Array<int> tab_(6);
     Array<char> nothinginside;
     Array<int> assign;
 
+   /* Array<int> v(6);
+    v = tab_;
+    
+    std::cout << tab_[0] << std::endl;
+    
+    std::cout << v[0] << std::endl;*/
+    
     std::cout << "Filling the 'tab_' array ..." << std::endl;
     fill_tab(tab_);
     std::cout << "Size of the 'tab_' array: ";
@@ -100,8 +107,6 @@ int main(void)
     print_content(cpy);
     std::cout << ">> First '_tab' array: ";
     print_content(tab_);
-
-
 
     return 0;
 }
