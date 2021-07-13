@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/20 16:45:41 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/13 11:11:59 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/13 11:30:10 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,16 +60,16 @@ int main(void)
     std::cout << "Filling the 'tab_' array ..." << std::endl;
     fill_tab(tab_);
     std::cout << "Size of the 'tab_' array: ";
-    //print_size(tab_);
+    print_size(tab_);
     std::cout << std::endl;
     std::cout << "tab_ : ";
-    //print_content(tab_);
+    print_content(tab_);
 
     std::cout << std::endl;
     std::cout << "Size of the 'nothinginside' array: ";
-   // print_size(nothinginside);
+    print_size(nothinginside);
     std::cout << "nothinginside : ";
-    //print_content(nothinginside);
+    print_content(nothinginside);
 
     std::cout << std::endl;
     std::cout << ">> Let's try to access a non allocated memory" << std::endl;
@@ -87,26 +87,26 @@ int main(void)
     std::cout << ">> Let's assign '_tab' to the 'assign' array" << std::endl;
     std::cout << ">> 'cpy' array: ";
     assign = tab_;
-    //print_content(assign);
+    print_content(assign);
     std::cout << ">> Let's change a value in the 'assign' array" << std::endl;
     assign[0] = 42;
     std::cout << ">> New 'assign' array: ";
-    //print_content(assign);
+    print_content(assign);
     std::cout << ">> First '_tab' array: ";
-    //print_content(tab_);
+    print_content(tab_);
 
     std::cout << std::endl;
     std::cout << std::endl;
     std::cout << ">> Let's cpy '_tab' to the 'cpy' array" << std::endl;
     Array<int> cpy(tab_);
     std::cout << ">> 'cpy' array: ";
-    //print_content(cpy);
+    print_content(cpy);
     std::cout << ">> Let's change a value in the 'cpy' array" << std::endl;
     cpy[3] = 10;
     std::cout << ">> New 'cpy array: ";
-    //print_content(cpy);
+    print_content(cpy);
     std::cout << ">> First '_tab' array: ";
-    //print_content(tab_);
+    print_content(tab_);
 
     return 0;
 }
