@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/20 13:05:18 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/09 13:46:28 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/13 10:13:07 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,6 +80,25 @@ int main(void)
     std::cout << "v1: " << s1 << ", v2: " << s2 << std::endl;
     std::cout << "max= " << ::max(s1, s2) << std::endl;
     std::cout << "std max= " << std::max(s1, s2) << std::endl;
+	std::cout << std::setfill ('-') << std::setw (30);
+    std::cout << "" << std::endl;
+
+
+    std::cout << std::setfill ('-') << std::setw (30);
+    std::cout << "" << std::endl;
+    std::cout << "Awesome Class:" << std::endl;
+    Awesome val1 = Awesome(42);
+    Awesome val2 = Awesome(101);
+
+    std::cout << "v1: " << val1 << ", v2: " << val2 << std::endl;
+    std::cout << "max= " << ::max(val1, val2) << std::endl;
+    std::cout << "v1: " << val1 << ", v2: " << val2 << std::endl;
+    std::cout << "min= " << ::min(val1, val2) << std::endl;
+    std::cout << "v1: " << val1 << ", v2: " << val2 << std::endl;
+    std::cout << "Swap::" << std::endl;
+    std::cout << "Before -> v1: " << val1 << "; v2: " << val2 << std::endl;
+    ::swap(val1, val2);
+    std::cout << "After -> v1: " << val1 << "; v2: " << val2 << std::endl;
 	std::cout << std::setfill ('-') << std::setw (30);
     std::cout << "" << std::endl;
 
