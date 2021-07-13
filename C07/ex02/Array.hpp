@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/20 15:36:41 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/13 11:30:42 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/13 11:35:33 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ T  & Array<T>::operator[](int index)
 {
     if (index < 0 || index >= this->tablen)
         throw std::exception();
-    this->tb[index];
+    return this->tb[index];
 }
 
 template<typename T>
