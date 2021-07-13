@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/20 14:03:19 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/12 14:54:01 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/13 11:04:14 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,15 @@ int main(void)
 
     return 0;
 }
+
+/*
+int main() {
+	int tab[] = { 0, 1, 2, 3, 4 }; // <--- I never understood why you can't write int[] tab. Wouldn't that make more sense?
+	Awesome tab2[5];
+
+	iter( tab, 5, print );
+	iter( tab2, 5, print );
+
+	return 0;
+}
+*/
