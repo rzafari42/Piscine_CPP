@@ -6,7 +6,7 @@
 /*   By: rzafari <rzafari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/21 13:59:52 by rzafari           #+#    #+#             */
-/*   Updated: 2021/07/12 19:49:22 by rzafari          ###   ########.fr       */
+/*   Updated: 2021/07/14 11:59:45 by rzafari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,25 @@
 
 int main()
 {
-    Span sp = Span(5);
+    Span sp = Span(6);
     Span empty = Span(0);
     Span oneelement = Span(1);
     
-    sp.addNumber(5);
-    sp.addNumber(3);
-    sp.addNumber(17);
-    sp.addNumber(9);
-    sp.addNumber(11);
+    try
+    {
+        sp.addNumber(5);
+        sp.addNumber(3);
+        sp.addNumber(17);
+        sp.addNumber(9);
+        sp.addNumber(11);
+        sp.addNumber(18);
+    }
+    catch(const std::exception& e)
+    {
+        std::cerr << "Too many values ! Overwriting ..." << '\n';
+    }
+    
+
     
     oneelement.addNumber(8);
     
