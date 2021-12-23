@@ -2,6 +2,10 @@
 
 Ce projet a pour but de nous faire apprendre le langage C++98 !  
 
+## Compatibilité OS
+
+Projet développé sous MacOs
+
 ## Compétences développées
 
 * Rigueur
